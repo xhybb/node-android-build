@@ -7,7 +7,7 @@ fi
 
 ndkver=
 if [ "x$2" == "x" ]; then
-  ndkver="23.0.7599858"
+  ndkver="25.1.8937393"
 else
   ndkver="$2"
 fi
@@ -21,7 +21,7 @@ fi
 
 sdkver=
 if [ "x$4" == "x" ]; then
-  sdkver="23"
+  sdkver="34"
 else
   sdkver="$4"
 fi
