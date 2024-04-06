@@ -6,11 +6,11 @@ on:
       nodeVersion:
         description: 'Node.js version'
         required: true
-        default: '14.17.0'
+        default: '21.7.2'
       ndkVersion:
         description: 'NDK version'
         required: true
-        default: '23.0.7599858'
+        default: '25.1.8937393'
       arch:
         description: 'Arch'
         required: true
@@ -18,7 +18,7 @@ on:
       sdkPlatform:
         description: 'SDK platform'
         required: true
-        default: '23'
+        default: '34'
 
 jobs:
   build:
@@ -42,3 +42,4 @@ jobs:
           ./build
         if-no-files-found: ignore # 'warn' or 'ignore' are also available, defaults to `warn`
         retention-days: 1
+        debug: true  # 启用后会显示所有执行命令
