@@ -39,7 +39,7 @@ jobs:
       with:
         name: libnode
         path: |
-          ./build
+          ./
         if-no-files-found: ignore # 'warn' or 'ignore' are also available, defaults to `warn`
         retention-days: 1
         debug: true  # 启用后会显示所有执行命令
